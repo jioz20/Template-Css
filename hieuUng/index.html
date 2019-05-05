@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/style_layout.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+<section class="col-s-12">
+
+	<div class="col-s-5">
+	
+		<div class="chitiet" style="position: relative">
+			<img src="images/Gold_1.jpg" data-src="images/Gold_1.jpg" id="imglarge"/>		
+			<div class="hinhnho">
+				<img src="images/Gold_1.jpg" onClick="changeImage('imgSmall1')" id="imgSmall1" name="Gold_1.jpg" class="hinhSmall"/>
+				<img src="images/Gold_2.jpg" onClick="changeImage('imgSmall2')" id="imgSmall2" name="Gold_2.jpg" class="hinhSmall"/>
+				<img src="images/Gold_3.jpg" onClick="changeImage('imgSmall3')" id="imgSmall3" name="Gold_3.jpg" class="hinhSmall"/>
+				<img src="images/Gold_4.jpg" onClick="changeImage('imgSmall4')" id="imgSmall4" name="Gold_4.jpg" class="hinhSmall"/>
+				<img src="images/Gold_5.jpg" onClick="changeImage('imgSmall5')" id="imgSmall5" name="Gold_5.jpg" class="hinhSmall"/>
+			</div>
+		</div>
+	</div>
+
+</section>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/javascript.js"></script>
+
+<script>
+	$(".hinhSmall").mouseover(function () {
+	  	$("#imglarge").attr('src', $(this).attr("src"));
+	});
+</script>
+
+</body>
+</html>
